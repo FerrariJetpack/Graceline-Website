@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigniFi - Send Money, Connect Lives</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* Lightest green background */
+        }
+        /* Custom color palette inspired by Dollar Tree green */
+        .bg-dignifi-primary { background-color: #047857; /* Emerald 700 - Darker Green */ }
+        .text-dignifi-primary { color: #047857; }
+        .border-dignifi-primary { border-color: #047857; }
+
+        .bg-dignifi-secondary { background-color: #10b981; /* Emerald 500 - Brighter Green */ }
+        .text-dignifi-secondary { color: #10b981; }
+
+        .bg-dignifi-accent { background-color: #d1fae5; /* Emerald 100 - Very Light Green */ }
+        .text-dignifi-accent { color: #d1fae5; }
+
+        .bg-dignifi-dark { background-color: #064e3b; /* Emerald 900 - Deepest Green */ }
+        .text-dignifi-dark { color: #064e3b; }
+
+        .btn-primary {
+            @apply bg-dignifi-secondary text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:bg-emerald-600 transition duration-300 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-dignifi-accent text-dignifi-dark font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-emerald-200 transition duration-300 ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-dignifi-primary text-white p-4 shadow-md rounded-b-xl">
+        <div class="container mx-auto flex justify-between items-center px-4 md:px-8">
+            <h1 class="text-3xl font-bold rounded-lg p-2">DigniFi</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-dignifi-accent transition duration-200 rounded-lg p-2">Features</a></li>
+                    <li><a href="#" class="hover:text-dignifi-accent transition duration-200 rounded-lg p-2">About Us</a></li>
+                    <li><a href="#" class="hover:text-dignifi-accent transition duration-200 rounded-lg p-2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-br from-dignifi-accent to-white text-center rounded-b-3xl shadow-inner">
+        <div class="container mx-auto px-4 md:px-8">
+            <h2 class="text-5xl font-extrabold text-dignifi-dark mb-6 leading-tight">
+                Connect & Care: <br class="md:hidden"> Send Money, Simply.
+            </h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                DigniFi makes sending money to loved ones effortless and secure, with a focus on clear, easy-to-understand steps for everyone. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button class="btn-primary">Get Started Now</button>
+        </div>
+    </section>
+
+    <!-- Product Shot Section - Messaging Interface -->
+    <section class="py-16 bg-white rounded-3xl shadow-xl mx-4 md:mx-8 my-12">
+        <div class="container mx-auto px-4 md:px-8">
+            <h3 class="text-4xl font-bold text-dignifi-dark text-center mb-12">
+                Your Loved Ones, Just a Message Away
+            </h3>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+
+                <!-- Left Phone Mockup - Contact List -->
+                <div class="bg-gray-100 rounded-3xl shadow-2xl w-full md:w-96 overflow-hidden border-4 border-gray-200">
+                    <div class="bg-dignifi-primary text-white p-4 text-center rounded-t-2xl">
+                        <p class="text-lg font-semibold">Contacts</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex items-center p-3 mb-3 bg-white rounded-xl shadow-sm hover:bg-dignifi-accent transition duration-200 cursor-pointer">
+                            <img src="https://placehold.co/48x48/d1fae5/047857?text=JD" alt="Contact Avatar" class="rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold text-dignifi-dark">John Doe</p>
+                                <p class="text-sm text-gray-500">Last message: Lorem ipsum...</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 mb-3 bg-white rounded-xl shadow-sm hover:bg-dignifi-accent transition duration-200 cursor-pointer">
+                            <img src="https://placehold.co/48x48/d1fae5/047857?text=JS" alt="Contact Avatar" class="rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold text-dignifi-dark">Jane Smith</p>
+                                <p class="text-sm text-gray-500">Last message: Dolor sit amet...</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 bg-dignifi-secondary text-white rounded-xl shadow-md">
+                            <img src="https://placehold.co/48x48/d1fae5/047857?text=MR" alt="Contact Avatar" class="rounded-full mr-4 border-2 border-white">
+                            <div>
+                                <p class="font-semibold">Michael Roe</p>
+                                <p class="text-sm">Ready to send money!</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-3 mt-3 bg-white rounded-xl shadow-sm hover:bg-dignifi-accent transition duration-200 cursor-pointer">
+                            <img src="https://placehold.co/48x48/d1fae5/047857?text=AS" alt="Contact Avatar" class="rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold text-dignifi-dark">Alice Smith</p>
+                                <p class="text-sm text-gray-500">Last message: Consectetur adipiscing...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Phone Mockup - Chat Interface with Transaction -->
+                <div class="bg-gray-100 rounded-3xl shadow-2xl w-full md:w-96 overflow-hidden border-4 border-gray-200">
+                    <div class="bg-dignifi-primary text-white p-4 flex items-center justify-between rounded-t-2xl">
+                        <div class="flex items-center">
+                            <img src="https://placehold.co/40x40/d1fae5/047857?text=MR" alt="Chat Avatar" class="rounded-full mr-3 border-2 border-white">
+                            <p class="text-lg font-semibold">Michael Roe</p>
+                        </div>
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                    </div>
+                    <div class="p-4 h-96 overflow-y-auto flex flex-col-reverse">
+                        <!-- Message Input (at the bottom of the scrollable area) -->
+                        <div class="flex items-center mt-4 p-2 bg-white rounded-full shadow-md">
+                            <input type="text" placeholder="Type a message..." class="flex-grow p-2 bg-transparent focus:outline-none text-gray-700 placeholder-gray-400 rounded-full">
+                            <button class="bg-dignifi-secondary text-white p-2 rounded-full ml-2 hover:bg-emerald-600 transition duration-200">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </button>
+                        </div>
+
+                        <!-- Messages (latest at the bottom) -->
+                        <div class="flex justify-end mb-3">
+                            <div class="bg-dignifi-secondary text-white p-3 rounded-t-xl rounded-bl-xl shadow-md max-w-[75%]">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <span class="text-xs text-white opacity-80 block text-right mt-1">10:35 AM</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-start mb-3">
+                            <div class="bg-white text-gray-800 p-3 rounded-t-xl rounded-br-xl shadow-md max-w-[75%]">
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <span class="text-xs text-gray-500 block text-left mt-1">10:30 AM</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-end mb-3">
+                            <div class="bg-dignifi-secondary text-white p-3 rounded-t-xl rounded-bl-xl shadow-md max-w-[75%]">
+                                <p>Here's the money you asked for!</p>
+                                <div class="bg-white text-dignifi-dark p-3 mt-2 rounded-lg shadow-inner flex items-center justify-between">
+                                    <div>
+                                        <p class="font-bold text-lg">$50.00</p>
+                                        <p class="text-sm">Money Sent</p>
+                                    </div>
+                                    <svg class="w-8 h-8 text-dignifi-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                </div>
+                                <span class="text-xs text-white opacity-80 block text-right mt-1">10:28 AM</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-start mb-3">
+                            <div class="bg-white text-gray-800 p-3 rounded-t-xl rounded-br-xl shadow-md max-w-[75%]">
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <span class="text-xs text-gray-500 block text-left mt-1">10:25 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility Focus Section -->
+    <section class="py-16 bg-dignifi-accent text-dignifi-dark rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h3 class="text-4xl font-bold mb-6">Designed for Everyone</h3>
+            <p class="text-xl max-w-3xl mx-auto mb-10">
+                DigniFi prioritizes ease of use. Our intuitive interface, simple language, and clear visual cues ensure that managing money is straightforward, no matter your literacy level. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <svg class="w-16 h-16 text-dignifi-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002 12c0 2.514.805 4.852 2.19 6.79a11.952 11.952 0 008.61 3.041 12.001 12.001 0 008.61-3.04C21.195 16.852 22 14.514 22 12c0-2.514-.805-4.852-2.19-6.79z"></path></svg>
+                    <h4 class="text-2xl font-semibold mb-2">Simple Steps</h4>
+                    <p class="text-gray-700 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <svg class="w-16 h-16 text-dignifi-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <h4 class="text-2xl font-semibold mb-2">Clear Visuals</h4>
+                    <p class="text-gray-700 text-center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center">
+                    <svg class="w-16 h-16 text-dignifi-secondary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a2 2 0 00-2-2H7a2 2 0 00-2 2v3m0 3h.01M12 12h.01M16 12h.01"></path></svg>
+                    <h4 class="text-2xl font-semibold mb-2">Secure & Private</h4>
+                    <p class="text-gray-700 text-center">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-dignifi-primary text-white text-center rounded-t-3xl shadow-lg">
+        <div class="container mx-auto px-4 md:px-8">
+            <h3 class="text-4xl font-bold mb-6">Ready to Connect?</h3>
+            <p class="text-xl max-w-2xl mx-auto mb-8">
+                Join DigniFi today and experience a new way to support your loved ones. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button class="btn-secondary text-dignifi-dark">Sign Up Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dignifi-dark text-white py-8 rounded-t-xl">
+        <div class="container mx-auto text-center px-4 md:px-8">
+            <p>&copy; 2025 DigniFi. All rights reserved. Lorem ipsum dolor sit amet.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-dignifi-secondary transition duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-dignifi-secondary transition duration-200">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
